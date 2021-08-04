@@ -1,6 +1,8 @@
 import './Store.css';
 import { LocationProvider } from "./location/LocationProvider"
 import { LocationList } from "./location/LocationList"
+import { ProductProvider } from "./product/ProductProvider"
+import { ProductList } from "./product/ProductList"
 
 export const Store = () => (
     <div className="Store">
@@ -27,5 +29,11 @@ export const Store = () => (
             </LocationProvider>
         </article>
 
+        <h2>Products</h2>
+        <article className="locations">
+            <ProductProvider>
+                <ProductList />
+            </ProductProvider>
+        </article>
     </div>
   );
